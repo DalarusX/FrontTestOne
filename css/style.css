@@ -1,0 +1,190 @@
+/* Начертания
+
+100 - thin
+200 - extra light
+300 - light
+400 - regular ( normal )
+500 - medium
+600 - semi bold
+700 - bold
+800 - extra bold
+900 - black 
+
+*/
+
+:root {
+    --FontSize: 24px;
+    --ColorRed: #E04D3B;
+    --ColorBlue: #7C3AF4;
+    --ColorGray: #D9D9D9;
+    --ColorFontBlack: #000;
+    --ColorFontWhite: #fff;
+    --FontFamilyNoto: "Noto Looped Thai UI";
+    --FontWeightNoto-Regular: 400;
+    --FontWeightNoto-Bold: 700;
+    --FontWeightNoto-SemiBold: 600;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+@font-face {
+    font-family: "Noto Looped Thai UI";
+    font-style: normal;
+    font-weight: 700;
+    display: swap;
+    src: local("Noto Looped Thai UI-Bold"), url("../fonts/NotoSansThaiLooped-Bold.ttf") format("ttf");
+  }
+
+  @font-face {
+    font-family: "Noto Looped Thai UI";
+    font-style: normal;
+    font-weight: 400;
+    display: swap;
+    src: local("Noto Looped Thai UI-Regular"), url("../fonts/NotoSansThaiLooped-Regular.ttf") format("ttf");
+  }
+
+  @font-face {
+    font-family: "Noto Looped Thai UI";
+    font-style: normal;
+    font-weight: 600;
+    display: swap;
+    src: local("Noto Looped Thai UI-SemiBold"), url("../fonts/NotoSansThaiLooped-SemiBold.ttf") format("ttf");
+  }
+
+body {
+    font-family: "Mulish","Noto Looped Thai UI", sans-serif;
+    font-size: var(--FontSize);
+}
+
+.container {
+    padding: 0 30px;
+}
+
+/* ---header-start-style--- */
+
+header {
+    position: relative;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.header-sidebar__logo {
+    padding: 14px 46px 17px 34px;
+    background-color: var(--ColorGray);
+}
+
+.header__buttons {
+    display: flex;
+    position: relative;
+    left: 1210px;
+}
+
+.header__button:nth-child(1) {
+    background: var(--ColorBlue);
+}
+
+.header__button:nth-child(2) {
+    background: var(--ColorRed);
+    margin-left: 15px;
+}
+
+.header__button {
+    font-family: 'Noto Looped Thai UI';
+    font-weight: var(--FontWeightNoto-Regular);
+    border: 1px solid var(--ColorFontBlack);
+    color: var(--ColorFontWhite);
+    font-size: var(--FontSize);
+    padding: 4px 16px;
+    border-radius: 30px;
+    display: block;
+}
+
+
+/* хуйня--------------- */
+
+.header__sidebar {
+    position: absolute;
+    top: 10px;
+    padding-right: 1px;
+    border-right: 1px solid #000;
+}
+
+.header-sidebar__menu {
+    margin-top: 40px;
+}
+
+.header-sidebar__item {
+    margin-bottom: 25px;
+} .header-sidebar__item:last-child {
+    margin-bottom: 0;
+}
+
+.main__container {
+    padding: 0 30px 0 377px;
+}
+
+.main__content {
+    padding-top: 15px;
+}
+
+.main__up input {
+    padding: 14px 187px 14px 34px;
+    border: 1px solid #000000;
+    box-shadow: -4px 4px 0px #858585;
+    border-radius: 30px;
+    margin-top: 5px;
+}
+
+
+
+
+
